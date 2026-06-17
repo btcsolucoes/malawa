@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#073f22">
+  <title>Malawa Alimentação Saudável - Cardápio Digital</title>
+  <meta name="description" content="Cardápio digital do Malawa Alimentação Saudável, no Shopping ETC, com self-service saudável, saladas e pratos executivos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=qrstack-malawa-v2">
+</head>
+<body data-theme="selfservice">
+  <main class="menu-shell">
+    <header class="cover" id="inicio">
+      <picture class="cover-media" aria-hidden="true">
+        <img class="cover-hero-image" src="assets/malawa-logo-hero.png" alt="">
+      </picture>
+      <h1 class="sr-only">Malawa Alimentação Saudável</h1>
+    </header>
+
+    <nav class="tab-dock" id="cardapio" role="tablist" aria-label="Categorias do cardápio">
+      <a class="tab is-active" href="#self-service" data-theme="selfservice"><span>01</span><b>Self-Service</b></a>
+      <a class="tab" href="#executivos" data-theme="executivos"><span>02</span><b>Executivos</b></a>
+      <a class="tab" href="#saladas" data-theme="saladas"><span>03</span><b>Saladas</b></a>
+      <a class="tab" href="#bebidas" data-theme="bebidas"><span>04</span><b>Bebidas</b></a>
+      <a class="tab" href="#info" data-theme="info"><span>05</span><b>Info</b></a>
+    </nav>
+
+    <div class="tab-panels">
+      <section class="panel" id="self-service" data-section="selfservice">
+        <div class="section-head">
+          <span>Almoço saudável</span>
+          <h2>Self-Service</h2>
+          <p>Buffet leve para montar um prato equilibrado. As categorias abaixo organizam possibilidades do self-service sem listar itens fixos ou preços.</p>
+        </div>
+
+        <div class="subtabs" role="tablist" aria-label="Categorias do self-service">
+          <button class="subtab is-active" type="button" data-target="self-folhas">Folhas</button>
+          <button class="subtab" type="button" data-target="self-proteinas">Proteínas</button>
+          <button class="subtab" type="button" data-target="self-graos">Grãos e bases</button>
+          <button class="subtab" type="button" data-target="self-legumes">Legumes</button>
+          <button class="subtab" type="button" data-target="self-funcionais">Funcionais</button>
+        </div>
+
+        <div class="subpanel is-active" id="self-folhas">
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Base verde</span><h3>Folhas e verduras</h3><p>Categoria para saladas frescas e bases leves do buffet.</p></div><strong>Buffet</strong></article>
+            <article class="menu-item"><div><span>Frescor</span><h3>Vegetais crus</h3><p>Categoria para opções frias, coloridas e de montagem rápida.</p></div><strong>Buffet</strong></article>
+            <article class="menu-item"><div><span>Rotativo</span><h3>Saladas do dia</h3><p>Seleção variável conforme disponibilidade da casa.</p></div><strong>Buffet</strong></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="self-proteinas" hidden>
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Leves</span><h3>Proteínas magras</h3><p>Categoria para compor pratos equilibrados no almoço.</p></div><strong>Buffet</strong></article>
+            <article class="menu-item"><div><span>Vegetal</span><h3>Opções vegetarianas</h3><p>Categoria para alternativas sem carne, conforme disponibilidade.</p></div><strong>Buffet</strong></article>
+            <article class="menu-item"><div><span>Rotativo</span><h3>Proteínas do dia</h3><p>Seleção variável da cozinha para o self-service.</p></div><strong>Buffet</strong></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="self-graos" hidden>
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Bases</span><h3>Arrozes e grãos</h3><p>Categoria para bases quentes e combinações do dia.</p></div><strong>Buffet</strong></article>
+            <article class="menu-item"><div><span>Energia</span><h3>Cereais e massas leves</h3><p>Categoria para acompanhamentos que dão sustentação ao prato.</p></div><strong>Buffet</strong></article>
+            <article class="menu-item"><div><span>Regional</span><h3>Feijões e leguminosas</h3><p>Categoria para opções nutritivas e de maior saciedade.</p></div><strong>Buffet</strong></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="self-legumes" hidden>
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Quentes</span><h3>Legumes cozidos</h3><p>Categoria para acompanhamentos leves servidos no buffet.</p></div><strong>Buffet</strong></article>
+            <article class="menu-item"><div><span>Raízes</span><h3>Tubérculos e purês</h3><p>Categoria para bases cremosas e acompanhamentos de maior conforto.</p></div><strong>Buffet</strong></article>
+            <article class="menu-item"><div><span>Rotativo</span><h3>Preparos do dia</h3><p>Seleção variável de legumes, raízes e guarnições.</p></div><strong>Buffet</strong></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="self-funcionais" hidden>
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Finalização</span><h3>Complementos funcionais</h3><p>Categoria para toppings, sementes, farofas leves e finalizações.</p></div><strong>Buffet</strong></article>
+            <article class="menu-item"><div><span>Molhos</span><h3>Molhos e temperos</h3><p>Categoria para acompanhar saladas e pratos montados.</p></div><strong>Buffet</strong></article>
+            <article class="menu-item"><div><span>Leveza</span><h3>Combinações saudáveis</h3><p>Opções variáveis para completar o prato conforme o dia.</p></div><strong>Buffet</strong></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="executivos" data-section="executivos">
+        <div class="section-head">
+          <span>À la carte</span>
+          <h2>Pratos executivos</h2>
+          <p>Combinações saudáveis com proteínas, bases, legumes e saladas, seguindo a referência real do cardápio da casa.</p>
+        </div>
+
+        <div class="subtabs" role="tablist" aria-label="Categorias dos pratos executivos">
+          <button class="subtab is-active" type="button" data-target="exec-carnes">Carnes</button>
+          <button class="subtab" type="button" data-target="exec-frango">Frango</button>
+          <button class="subtab" type="button" data-target="exec-peixes">Peixes</button>
+          <button class="subtab" type="button" data-target="exec-veganos">Veganos</button>
+        </div>
+
+        <div class="subpanel is-active" id="exec-carnes">
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Molho madeira</span><h3>Filé à Liverpool</h3><p>Filé ao molho madeira, arroz branco, purê de macaxeira e legumes ao vapor.</p></div><strong>Consulte</strong></article>
+            <article class="menu-item"><div><span>Regional</span><h3>Carne de Sol do Sertão</h3><p>Carne de sol em cubos com queijo coalho, arroz branco, feijão verde e purê de abóbora.</p></div><strong>Consulte</strong></article>
+            <article class="menu-item"><div><span>Mar</span><h3>Camarão ao Coco com Legumes</h3><p>Arroz branco e farofa funcional da casa.</p></div><strong>Consulte</strong></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="exec-frango" hidden>
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Fit</span><h3>Filé de Frango Fit</h3><p>Arroz integral multigrãos, purê de batatas e legumes ao vapor.</p></div><strong>Consulte</strong></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="exec-peixes" hidden>
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Maracujá</span><h3>Tilápia ao Molho de Maracujá</h3><p>Arroz de brócolis, batatas rústicas, mix de folhas com cenoura ralada, tomate cereja e milho.</p></div><strong>Consulte</strong></article>
+            <article class="menu-item"><div><span>Gergelim</span><h3>Tilápia na Crosta de Gergelim</h3><p>Arroz integral multigrãos, purê de abóbora, mix de folhas com cenoura ralada, tomate cereja e milho.</p></div><strong>Consulte</strong></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="exec-veganos" hidden>
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Vegano</span><h3>Almôndegas de Lentilha</h3><p>Penne ou linguine ao molho de tomate da casa.</p></div><strong>Consulte</strong></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="saladas" data-section="saladas">
+        <div class="section-head">
+          <span>Frescor</span>
+          <h2>Saladas</h2>
+          <p>Categorias genéricas para orientar a escolha de saladas, sem assumir receitas fixas além do que aparece no cardápio de executivos.</p>
+        </div>
+
+        <div class="subtabs" role="tablist" aria-label="Categorias de saladas">
+          <button class="subtab is-active" type="button" data-target="saladas-bases">Bases</button>
+          <button class="subtab" type="button" data-target="saladas-complementos">Complementos</button>
+          <button class="subtab" type="button" data-target="saladas-molhos">Molhos</button>
+        </div>
+
+        <div class="subpanel is-active" id="saladas-bases">
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Frescor</span><h3>Folhas variadas</h3><p>Bases verdes para montar saladas leves.</p></div><strong>Consulte</strong></article>
+            <article class="menu-item"><div><span>Colorido</span><h3>Legumes e vegetais</h3><p>Categoria para opções frias ou cozidas conforme disponibilidade.</p></div><strong>Consulte</strong></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="saladas-complementos" hidden>
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Saciedade</span><h3>Grãos e sementes</h3><p>Complementos para deixar a salada mais completa.</p></div><strong>Consulte</strong></article>
+            <article class="menu-item"><div><span>Prato</span><h3>Proteínas do dia</h3><p>Categoria para montar saladas com maior sustentação.</p></div><strong>Consulte</strong></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="saladas-molhos" hidden>
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Finalização</span><h3>Molhos leves</h3><p>Categoria para temperar folhas, legumes e proteínas.</p></div><strong>Consulte</strong></article>
+            <article class="menu-item"><div><span>Temperos</span><h3>Opções da casa</h3><p>Seleção variável conforme disponibilidade.</p></div><strong>Consulte</strong></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="bebidas" data-section="bebidas">
+        <div class="section-head">
+          <span>Leveza</span>
+          <h2>Bebidas</h2>
+          <p>Categorias de bebidas para acompanhar o almoço, sem listar sabores ou itens fixos não confirmados.</p>
+        </div>
+
+        <div class="subtabs" role="tablist" aria-label="Categorias de bebidas">
+          <button class="subtab is-active" type="button" data-target="bebidas-naturais">Naturais</button>
+          <button class="subtab" type="button" data-target="bebidas-leves">Leves</button>
+          <button class="subtab" type="button" data-target="bebidas-classicas">Clássicas</button>
+        </div>
+
+        <div class="subpanel is-active" id="bebidas-naturais">
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Frutas</span><h3>Sucos e refrescos</h3><p>Categoria para bebidas naturais conforme disponibilidade.</p></div><strong>Consulte</strong></article>
+            <article class="menu-item"><div><span>Dia</span><h3>Opções da casa</h3><p>Seleção variável para acompanhar o almoço.</p></div><strong>Consulte</strong></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="bebidas-leves" hidden>
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Leveza</span><h3>Bebidas funcionais</h3><p>Categoria para opções leves e saudáveis, conforme disponibilidade.</p></div><strong>Consulte</strong></article>
+            <article class="menu-item"><div><span>Refresco</span><h3>Bebidas geladas</h3><p>Categoria para opções refrescantes do dia.</p></div><strong>Consulte</strong></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="bebidas-classicas" hidden>
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Essenciais</span><h3>Águas e refrigerantes</h3><p>Categoria para bebidas tradicionais, conforme disponibilidade.</p></div><strong>Consulte</strong></article>
+            <article class="menu-item"><div><span>Café</span><h3>Bebidas quentes</h3><p>Categoria para opções de encerramento, se disponíveis.</p></div><strong>Consulte</strong></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="info" data-section="info">
+        <div class="section-head">
+          <span>Restaurante</span>
+          <h2>Informações</h2>
+          <p>Malawa Alimentação Saudável, no Shopping ETC.</p>
+        </div>
+        <div class="info-grid">
+          <article><span>Endereço</span><p>Shopping ETC</p></article>
+          <article><span>Funcionamento</span><p>11h - 21h</p></article>
+          <article><span>WhatsApp</span><p>(81) 9929-4260</p></article>
+          <article><span>Instagram</span><p>@malawa.rest</p></article>
+        </div>
+      </section>
+    </div>
+
+    <footer class="menu-footer">
+      <div class="product-badge" aria-label="Um produto QrStack">
+        <div class="qrstack-lockup">
+          <span class="product-copy">Um produto</span>
+          <img class="qrstack-mark" src="assets/qrstack-mark.png" alt="" aria-hidden="true">
+        </div>
+        <img class="qrstack-wordmark" src="assets/qrstack-wordmark.png" alt="QrStack">
+      </div>
+      <div class="footer-brand">
+        <img src="assets/malawa-logo-hero.png" alt="Malawa Alimentação Saudável">
+        <p>Malawa Alimentação Saudável</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js?v=qrstack-malawa-v2"></script>
+</body>
+</html>
