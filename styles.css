@@ -95,13 +95,12 @@ p {
 
 .cover::before {
   position: absolute;
-  inset: -28px;
+  inset: 0;
   z-index: 0;
-  background: url("assets/malawa-logo-hero.png") center / cover no-repeat;
+  background:
+    radial-gradient(ellipse at 50% 43%, rgba(151, 201, 60, 0.12), transparent 26rem),
+    linear-gradient(180deg, #075a27 0%, #004819 48%, #003614 100%);
   content: "";
-  filter: blur(18px) saturate(1.08);
-  opacity: 0.62;
-  transform: scale(1.06);
 }
 
 .cover::after {
@@ -416,15 +415,14 @@ p {
 
   .cover {
     width: auto;
-    min-height: 76svh;
+    min-height: 100svh;
     margin-inline: -10px;
   }
 
   .cover::before {
-    inset: -20px;
-    background-size: cover;
-    filter: blur(16px) saturate(1.12);
-    opacity: 0.52;
+    background:
+      radial-gradient(ellipse at 50% 43%, rgba(151, 201, 60, 0.14), transparent 18rem),
+      linear-gradient(180deg, #075a27 0%, #004819 50%, #003714 100%);
   }
 
   .cover::after {
@@ -434,7 +432,7 @@ p {
   }
 
   .cover-hero-image {
-    width: min(104vw, 720px);
+    width: min(98vw, 680px);
     filter: drop-shadow(0 14px 24px rgba(0, 20, 8, 0.22));
   }
 
@@ -522,14 +520,13 @@ p {
 
 @media (max-width: 560px) {
   .cover {
-    min-height: 66svh;
+    min-height: 100svh;
   }
 
   .cover::before {
-    inset: -24px;
-    background-position: center;
-    filter: blur(18px) saturate(1.15);
-    opacity: 0.5;
+    background:
+      radial-gradient(ellipse at 50% 42%, rgba(151, 201, 60, 0.16), transparent 14rem),
+      linear-gradient(180deg, #075a27 0%, #004819 50%, #003714 100%);
   }
 
   .cover::after {
@@ -538,7 +535,7 @@ p {
   }
 
   .cover-hero-image {
-    width: 102vw;
+    width: 94vw;
   }
 
   .tab {
